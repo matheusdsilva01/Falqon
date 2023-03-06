@@ -1,0 +1,413 @@
+@import url(./variables.css);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--white);
+    background: #261136;
+    font-family: 'Inter', sans-serif;
+}
+
+hr {
+    border-color: #707070;
+    border-style: solid;
+}
+
+#container-page {
+    position: relative;
+    width: 100%;
+    background-color: var(--darkPurple);
+    max-width: 375px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 0 20px;
+    background: url("../assets/imgs/overlay.png") no-repeat;
+}
+
+button#add {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    border: none;
+    border-radius: 100%;
+    width: 56px;
+    height: 56px;
+    background-color: var(--brightPurple);
+}
+
+.title-page {
+    padding-top: 107px;
+    font-size: 36px;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.603922);
+}
+
+#card-localization {
+    margin-top: 21px;
+    width: 100%;
+    background-color: #272727e7;
+}
+
+#card-localization>.localization-header {
+    display: flex;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+#card-localization>.localization-header span {
+    padding: 11px 12px;
+    width: 50%;
+}
+
+#card-localization>.localization-header span:first-child {
+    background-color: var(--vividGreen);
+}
+
+#card-localization .localization-details {
+    padding: 25px 12px;
+    height: 279px;
+}
+
+.localization-details .route {
+    display: flex;
+    justify-content: space-between;
+}
+
+.route div p {
+    font-size: 48px;
+}
+
+.route div span {
+    font-size: 11px;
+}
+
+.route div:last-child {
+    text-align: end;
+}
+
+.localization-details hr {
+    margin-top: 17px;
+}
+
+.localization-details .card-details {
+    margin-top: 22px;
+    padding: 0 19px;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 19px;
+    flex-wrap: wrap;
+}
+
+.card-details .detail-group {
+    width: 69px;
+    text-align: center;
+}
+
+.detail-group p {
+    font-size: 11px;
+}
+
+.detail-group span {
+    font-size: 14px;
+}
+
+.card-details button {
+    font-size: 10px;
+    background-color: var(--darkPurple);
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    padding: 17px 36px;
+}
+
+#plans {
+    margin-top: 35px;
+}
+
+#plans>h3 {
+    color: var(--lightBlue);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+#plans .card-plan {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    margin-bottom: 20px;
+}
+
+.card-plan img {
+    width: 335px;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card-plan .card-text-group {
+    position: absolute;
+    backdrop-filter: blur(10px);
+    bottom: 0;
+    left: 0;
+    padding: 20px 19px;
+    width: 100%;
+    height: 114px;
+    filter: blur(0.2px);
+    background-color: #21212185;
+}
+
+
+.card-text-group .text-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.card-text-group .text-title h3 {
+    font-size: 24px;
+}
+
+.card-text-group .text-title span {
+    width: 60px;
+    height: 24px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 11px;
+    background-image: linear-gradient(270deg, #7B1FA2 0%, #4527A0 100%);
+}
+
+.card-text-group .card-localization {
+    display: flex;
+    width: 100%;
+    margin-top: 14px;
+}
+
+.card-localization img {
+    margin-right: 10px;
+    width: 15px;
+}
+
+.card-localization p {
+    margin: auto 0;
+    font-size: 12px;
+}
+
+.card-plan .card-text-group-full {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #272727de;
+}
+
+.card-plan .card-text-group-full .card-transportation-reminders {
+    padding: 35px 23px;
+}
+
+.card-transportation-reminders .data-driver {
+    display: flex;
+}
+
+.card-transportation-reminders .data-driver img {
+    width: 32px;
+    height: 32px;
+    margin-right: 14px;
+    border-radius: 100%;
+    border: solid var(--white) 1px;
+}
+
+.card-transportation-reminders .data-driver p {
+    font-size: 14px;
+}
+
+.card-transportation-reminders .data-driver p>span {
+    color: var(--vividGreen);
+}
+
+.card-transportation-reminders .race {
+    list-style: none;
+}
+
+.card-transportation-reminders .race .race-point {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 13px;
+    padding-left: 20px;
+}
+
+.race .race-point .rounded-style-list {
+    margin-right: 10px;
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    border: 1px var(--white) solid;
+}
+
+.rounded-style-list div {
+    width: 22px;
+    border-radius: 100%;
+    height: 22px;
+    background-color: var(--brightPurple);
+    border: 1px var(--white) solid;
+}
+
+.race-point:last-child:before {
+    display: none;
+}
+
+.race .race-point:before {
+    background-color: var(--white);
+    width: 1px;
+    content: '';
+    position: absolute;
+    top: 61px;
+    bottom: -29px;
+    left: 15px;
+}
+
+.race-point .content-address {
+    width: 100%;
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.content-address .text-group-address h3 {
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.content-address .text-group-address p {
+    width: 100%;
+    max-width: 169px;
+    font-size: 12px;
+}
+
+.content-address button {
+    border-radius: 100%;
+    background-color: var(--brightPurple);
+    border: none;
+    width: 36px;
+    height: 36px;
+}
+
+.content-address button>img {
+    width: 16px;
+    height: 16px;
+}
+
+.card-transportation-alternatives {
+    background-image: linear-gradient(224.48deg, #7B1FA2 0.89%, #4527A0 100%);
+    height: 275px;
+    width: 100%;
+    margin-bottom: 29px;
+    padding: 20px;
+}
+
+.card-transportation-alternatives>.container-transport-details {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.container-transport-details>.transport-address {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.transport-address .input-box {
+    position: relative;
+}
+
+.transport-address .input-box span {
+    top: 28%;
+    left: 10px;
+    font-size: 12px;
+    color: #8E8E8E;
+    position: absolute;
+}
+
+.transport-address input {
+    width: 100%;
+    border: none;
+    background-color: var(--white);
+    padding: 12px 12px 12px 49px;
+}
+
+.container-transport-details .transport-alternatives>ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.transport-alternatives>ul>li {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.transport-alternatives>ul>li>.ic-tranport {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 6px #00000052;
+    background-color: var(--brightPurple);
+}
+
+.transport-alternatives>ul>li:nth-child(2) .ic-tranport {
+    background-color: var(--lightBlue);
+}
+
+.transport-alternatives>ul>li:nth-child(3) .ic-tranport {
+    background-color: var(--blue);
+}
+
+.transport-alternatives>ul>li:nth-child(4) .ic-tranport {
+    background-color: var(--gray);
+}
+
+.ic-tranport>img {
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    background-color: #431C60;
+    width: 100%;
+    height: 56px;
+    padding: 0 20px;
+}
+
+footer nav {
+    width: 100%;
+    margin: auto;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li img {
+    display: block;
+}
